@@ -21,8 +21,11 @@ import java.io.File;
 import java.io.IOException;
 import java.net.CacheRequest;
 import java.net.CacheResponse;
+
 import com.integralblue.httpresponsecache.compat.java.net.ExtendedResponseCache;
+
 import java.net.ResponseCache;
+
 import com.integralblue.httpresponsecache.compat.java.net.ResponseSource;
 
 import java.net.HttpURLConnection;
@@ -38,7 +41,8 @@ import libcore.io.IoUtils;
 
 import com.integralblue.httpresponsecache.compat.URLStreamHandlerFactoryImpl;
 import com.integralblue.httpresponsecache.compat.javax.net.ssl.DefaultHostnameVerifier;
-import com.jakewharton.DiskLruCache;
+import com.jakewharton.disklrucache.DiskLruCache;
+
 
 /***
  * Caches HTTP and HTTPS responses to the filesystem so they may be reused,

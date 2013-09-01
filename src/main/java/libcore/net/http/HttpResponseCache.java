@@ -44,6 +44,7 @@ import java.security.cert.X509Certificate;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+
 import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.SSLPeerUnverifiedException;
 
@@ -56,7 +57,7 @@ import com.integralblue.httpresponsecache.compat.MD5;
 import com.integralblue.httpresponsecache.compat.Strings;
 import com.integralblue.httpresponsecache.compat.java.net.ExtendedResponseCache;
 import com.integralblue.httpresponsecache.compat.java.net.ResponseSource;
-import com.jakewharton.DiskLruCache;
+import com.jakewharton.disklrucache.DiskLruCache;
 
 /**
  * Cache responses in a directory on the file system. Most clients should use
